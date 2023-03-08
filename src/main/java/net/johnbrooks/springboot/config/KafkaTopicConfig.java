@@ -14,4 +14,11 @@ public class KafkaTopicConfig {
                 .name("DEMO_TOPIC")
                 .build();
     }
+
+    @Bean
+    public NewTopic userTopic() {
+        return TopicBuilder
+                .name("USER_TOPIC")
+                .build();
+    }
 }
